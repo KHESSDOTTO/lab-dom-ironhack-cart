@@ -20,6 +20,16 @@ function calculateAll() {
   //... your code goes here
 }
 
+function updateSubtotal(product) {
+  const price = Number(product.querySelector('.price span').innerHTML);
+  const quantity = product.querySelector('.quantity input').value;
+  const subtotal = product.querySelector('.subtotal span');
+  const subtotalVal = price * quantity;
+
+  subtotal.innerHTML = subtotalVal;
+  return subtotalVal;
+}
+
 // ITERATION 4
 
 function removeProduct(event) {
