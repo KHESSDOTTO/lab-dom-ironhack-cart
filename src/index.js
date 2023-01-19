@@ -36,12 +36,15 @@ function removeProduct(event) {
 // ITERATION 5
 
 function createProduct() {
-  //... your code goes here
+  // my code goes in here...
 };
 
 window.addEventListener('load', () => {
   const calculatePricesBtn = document.getElementById('calculate');
   calculatePricesBtn.addEventListener('click', calculateAll);
+
+  let createBtn = document.querySelector('.create-product #create');
+  createBtn.addEventListener('click', createProduct);
 
   let allRemoveBtns = document.getElementsByClassName('btn-remove');
   for (let i = 0; i < allRemoveBtns.length; i++) {
